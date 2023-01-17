@@ -1,0 +1,90 @@
+
+body {
+    background-color: bisque;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#title {
+    text-align: center;
+}
+
+p {
+    text-align: center;
+}
+
+#main {
+    position: relative;
+
+}
+.diary {
+    box-sizing: border-box;
+    max-width: 900px;
+    min-width: 700px;
+    max-height: 600px;
+    min-height: 500px;
+    margin: 0 auto;
+    padding-top: 50px;
+    background-color: white;
+    border: solid sienna;
+    border-width: 7px;
+
+}
+
+#left {
+    position: absolute;
+    left: 280px;
+    width: 45%;
+    padding-top: 0px;
+
+}
+
+#entry {
+    margin-top: -10px;
+    height: 400px;
+    width: 350px;
+}
+
+#right {
+    position: absolute;
+    vertical-align:middle;
+    right: 20px;
+    width: 45%;
+    top: 54px;
+    height: 487px;
+    border-left: solid black;
+    border-width: 1px;
+    padding-left: 40px;
+}
+
+#output {
+    margin-top: 40px;
+    height: 400px;
+    width: 350px;
+}
+
+textarea {
+    font-size: 15px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+#inputBt {
+    margin-left: 60px;
+}
+
+#copyBt {
+    margin-top: 10px;
+    margin-left: 625px;
+}
+
+#offsetNum {
+    width: 34px;
+}
+
+button {
+    background-color: aliceblue;
+    color: black;
+    border-color: antiquewhite;
+}
