@@ -38,10 +38,11 @@ p {
 
 }
 
-#entry {
+#input {
     margin-top: -10px;
     height: 400px;
     width: 350px;
+    padding: 0;
 }
 
 #right {
@@ -60,14 +61,11 @@ p {
     margin-top: 40px;
     height: 400px;
     width: 350px;
+    padding: 0;
 }
 
 textarea {
     font-size: 15px;
-    padding-left: 5px;
-    padding-right: 5px;
-    padding-top: 5px;
-    padding-bottom: 5px;
 }
 
 #inputBt {
