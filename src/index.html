@@ -10,14 +10,15 @@
       <h2 id="title">Querido Diário Secreto</h2>
       <div class="diary">
         <div id="left">
-          <textarea input="inputText" id="input" style="resize:none" placeholder="Escreva aqui os seus segredos..."></textarea>
-        <br>
-        <button id="inputBt">Encriptar</button>
-        <input type="number" id="offsetNum">
-        <button id="outputBt">Desencriptar</button>
+          <form id="form-cipher">
+            <textarea input="inputText" id="input" style="resize:none" placeholder ="Escreva aqui os seus segredos..."></textarea>
+          </form>
+        <button type="submit" id="encodeBt" (click)="encodeMessage()">Encriptar</button>
+        <input type="number" id="offsetNum" maxlength="25">
+        <button id="decodeBt">Desencriptar</button>
         </div>
         <div id="right">
-        <textarea output="outputText" id="output" style="resize:none" placeholder="e deixe-os mais secretos ainda!"readonly></textarea>
+        <div output="outputText" id="output"></div>
       </div>
       </div>
         <button id="copyBt">Copie o seu código</button>

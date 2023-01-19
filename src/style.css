@@ -47,7 +47,7 @@ p {
 
 #right {
     position: absolute;
-    vertical-align:middle;
+    vertical-align: middle;
     right: 20px;
     width: 45%;
     top: 54px;
@@ -57,7 +57,7 @@ p {
     padding-left: 40px;
 }
 
-#output {
+#outputArea {
     margin-top: 40px;
     height: 400px;
     width: 350px;
