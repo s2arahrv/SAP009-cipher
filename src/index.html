@@ -15,10 +15,10 @@
           </form>
         <button type="submit" id="encodeBt" (click)="encodeMessage()">Encriptar</button>
         <input type="number" id="offsetNum" maxlength="25">
-        <button id="decodeBt">Desencriptar</button>
         </div>
         <div id="right">
-        <div output="outputText" id="output"></div>
+        <textarea output="outputText" id="output" style="resize:none" placeholder="e torne-os mais secretos ainda!" readonly></textarea>
+        <button id="decodeBt">Desencriptar</button>
       </div>
       </div>
         <button id="copyBt">Copie o seu código</button>
