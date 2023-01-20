@@ -5,11 +5,12 @@ let result = "";
 //Encontrar código ASC das letras do alfabeto
 //Loop por todas as letras da mensagem, encontrando o código de cada uma
   for (let i = 0; i < string.length; i++){
-      const cipherUppercase = string.toUpperCase();
-      const cipherCode = cipherUppercase.charCodeAt(i);
+    const cipherUppercase = string.toUpperCase();
+    const cipherCode = cipherUppercase.charCodeAt(i);
 /*Executar ((codigoDaLetra - cod1aLetra + desloc) % tamDoAlfabeto) + cod1aLetra, 
-retornar String dos códigos unicode e adicionar ao output final*/      
-      } return result += string.fromCharCode((cipherCode - 65 + offset) % 26) + 65;
+retornar String dos códigos unicode e adicioná-la ao output final*/      
+    result +=  String.fromCharCode(((cipherCode - 65 + offset) % 26) + 65);
+      } return result
   } 
 };
 export default cipher;

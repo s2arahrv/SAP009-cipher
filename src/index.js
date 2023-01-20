@@ -8,9 +8,9 @@ inputButton.addEventListener("click", encodeMessage);
     const offset = Number(document.getElementById("offsetNum").value);
     const string = document.getElementById("input").value;
     const encodeResult = cipher.encode(offset, string);
-    const showResult = document.getElementById("outputArea");
+    const showResult = document.getElementById("output");
 
-    console.log(encodeResult);
-    //return showResult.innerHTML = encodeResult;
+    return showResult.innerHTML = encodeResult;
 };
-//console.log(cipher.encode);
+
+//console.log(encodeResult);
