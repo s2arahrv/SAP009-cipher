@@ -1,4 +1,5 @@
 const cipher = {
+//Criar função encode
   encode : function(offset, string) {
 //Variável da mensagem final
 let result = "";
@@ -11,7 +12,20 @@ let result = "";
 retornar String dos códigos unicode e adicioná-la ao output final*/      
     result +=  String.fromCharCode(((cipherCode - 65 + offset) % 26) + 65);
       } return result
-  } 
+  },
+
+//Criar função decode
+  decode : function(offset, string) {
+//Variável da mensagem final (decodificada)
+let decodeResult = "";
+//Loop por todas as letras da mensagem, encontrando o código (codificado) de cada uma
+    for (let i = 0; i < string.length; i++){
+      const cipherEncoded = string.charCodeAt(i);
+//Executar ((codigoDaLetra + cod1aLetra - desloc) % tamDoAlfabeto) - cod1aLetra
+      decodeResult += String.fromCharCode(((cipherEncoded + 65 - offset) % 26) + 65);
+      //Retornar string dos códigos unicode e adicioná-ça ao output final
+    } return decodeResult;
+  }
 };
 export default cipher;
  

@@ -14,11 +14,12 @@
             <textarea input="inputText" id="input" style="resize:none" placeholder ="Escreva aqui os seus segredos..."></textarea>
           </form>
         <button type="submit" id="encodeBt" (click)="encodeMessage()">Encriptar</button>
-        <input type="number" id="offsetNum" maxlength="25">
+        <input type="number" class="offsetNum" id="encodeOffset" max="5" min="1">
         </div>
         <div id="right">
-        <textarea output="outputText" id="output" style="resize:none" placeholder="e torne-os mais secretos ainda!" readonly></textarea>
+        <textarea output="outputText" id="output" style="resize:none" placeholder="e torne-os mais secretos ainda!"></textarea>
         <button id="decodeBt">Desencriptar</button>
+        <input type="number" class="offsetNum" id="decodeOffset" max="5" min="1">
       </div>
       </div>
         <button id="copyBt">Copie o seu código</button>

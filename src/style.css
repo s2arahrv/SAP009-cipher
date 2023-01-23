@@ -85,8 +85,13 @@ textarea {
     margin-left: 590px;
 }
 
-#offsetNum {
+.offsetNum {
     width: 34px;
+}
+
+#decodeOffset {
+    margin-left: 63px;
+    margin-top: 3px;
 }
 
 button {
