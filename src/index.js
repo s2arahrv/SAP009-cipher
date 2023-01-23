@@ -28,4 +28,18 @@ decodeButton.addEventListener("click", decodeMessage);
     return showDecodeResult.innerHTML = decodeResult;
 };
 
+//Função para recarregar a página
+const refreshButton = document.querySelector("#refreshBt"); {
+const refreshPage = () => {
+    location.reload();
+}
+refreshButton.addEventListener('click', refreshPage);
+};
+/*Função para copiar o código
+function copy() {
+const copyText = document.getElementById("output").innerHTML;
+    copyText.select();
+    navigator.clipboard.writeText(copyText.value);
+    alert("Copiado!");
+};*/
 //console.log(encodeResult);

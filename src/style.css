@@ -75,14 +75,19 @@ textarea {
 }
 
 #decodeBt {
-    position: absolute;
-    left: 155px;
+    position: relative;
+    left: 40px;
     margin-top: 3px;
 }
 
-#copyBt {
+#refreshBt {
     margin-top: 10px;
     margin-left: 590px;
+}
+
+#copyBt {
+    margin-left: 50px;
+
 }
 
 .offsetNum {
@@ -90,7 +95,7 @@ textarea {
 }
 
 #decodeOffset {
-    margin-left: 63px;
+    margin-left: 40px;
     margin-top: 3px;
 }
 
