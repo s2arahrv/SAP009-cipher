@@ -1,27 +1,35 @@
 const cipher = {
-//Criar função encode
+// Criar função encode
   encode : function(offset, string) {
-//Variável da mensagem final
-let result = "";
-//Encontrar código ASC das letras do alfabeto
-//Loop por todas as letras da mensagem, encontrando o código de cada uma
-  for (let i = 0; i < string.length; i++){
-    const cipherUppercase = string.toUpperCase();
-    const cipherCode = cipherUppercase.charCodeAt(i);
-/*Executar ((codigoDaLetra - cod1aLetra + desloc) % tamDoAlfabeto) + cod1aLetra, 
-retornar String dos códigos unicode e adicioná-la ao output final*/      
-    result +=  String.fromCharCode(((cipherCode - 65 + offset) % 26) + 65);
-      } return result
+    // Devolver erro se offset for null
+    if (!offset){ 
+      throw new TypeError();
+    }
+    // Variável da mensagem final
+    let result = "";
+    // Encontrar código ASC das letras do alfabeto
+    // Loop por todas as letras da mensagem, encontrando o código de cada uma
+    for (let i = 0; i < string.length; i++){
+      const cipherUppercase = string.toUpperCase();
+      const cipherCode = cipherUppercase.charCodeAt(i);
+      /* Executar ((codigoDaLetra - cod1aLetra + desloc) % tamDoAlfabeto) + cod1aLetra, 
+retornar String dos códigos unicode e adicioná-la ao output final */      
+      result +=  String.fromCharCode(((cipherCode - 65 + offset) % 26) + 65);
+    } return result
   },
 
-//Criar função decode
+  // Criar função decode
   decode : function(offset, string) {
-//Variável da mensagem final (decodificada)
-let decodeResult = "";
-//Loop por todas as letras da mensagem, encontrando o código (codificado) de cada uma
+    //Devolver erro se offset for null
+    if (!offset){ 
+      throw new TypeError();
+    }
+    // Variável da mensagem final (decodificada)
+    let decodeResult = "";
+    // Loop por todas as letras da mensagem, encontrando o código (codificado) de cada uma
     for (let i = 0; i < string.length; i++){
       const cipherEncoded = string.charCodeAt(i);
-//Executar ((codigoDaLetra + cod1aLetra - desloc) % tamDoAlfabeto) - cod1aLetra
+      //Executar ((codigoDaLetra + cod1aLetra - desloc) % tamDoAlfabeto) - cod1aLetra
       decodeResult += String.fromCharCode(((cipherEncoded + 65 - offset) % 26) + 65);
       //Retornar string dos códigos unicode e adicioná-ça ao output final
     } return decodeResult;
