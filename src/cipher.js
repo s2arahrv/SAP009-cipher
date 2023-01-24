@@ -10,11 +10,17 @@ const cipher = {
     // Encontrar código ASC das letras do alfabeto
     // Loop por todas as letras da mensagem, encontrando o código de cada uma
     for (let i = 0; i < string.length; i++){
-      const cipherUppercase = string.toUpperCase();
-      const cipherCode = cipherUppercase.charCodeAt(i);
+      const cipherCode = string.charCodeAt(i);
+      //const cipherCode = cipherUppercase.charCodeAt(i);
       /* Executar ((codigoDaLetra - cod1aLetra + desloc) % tamDoAlfabeto) + cod1aLetra, 
 retornar String dos códigos unicode e adicioná-la ao output final */      
-      result +=  String.fromCharCode(((cipherCode - 65 + offset) % 26) + 65);
+      if (cipherCode >= 65 && cipherCode <= 90) {
+        result +=  String.fromCharCode(((cipherCode - 65 + offset) % 26) + 65); 
+      } else if (cipherCode >= 97 && cipherCode <= 122) {
+        result +=  String.fromCharCode(((cipherCode - 97 + offset) % 26) + 97);
+      } else {
+        result += string.charAt(i);
+      }
     } return result
   },
 
@@ -30,31 +36,18 @@ retornar String dos códigos unicode e adicioná-la ao output final */
     for (let i = 0; i < string.length; i++){
       const cipherEncoded = string.charCodeAt(i);
       //Executar ((codigoDaLetra + cod1aLetra - desloc) % tamDoAlfabeto) - cod1aLetra
-      decodeResult += String.fromCharCode(((cipherEncoded + 65 - offset) % 26) + 65);
-      //Retornar string dos códigos unicode e adicioná-ça ao output final
+      if (cipherEncoded >= 65 && cipherEncoded <= 90) {
+        decodeResult += String.fromCharCode(((cipherEncoded + 65 - offset) % 26) + 65); 
+      } else if (cipherEncoded >= 97 && cipherEncoded <= 122) {
+        decodeResult += String.fromCharCode(((cipherEncoded - 122 - offset) % 26) + 122); 
+      } else {
+        decodeResult += string.charAt(i);
+      }
     } return decodeResult;
   }
 };
 export default cipher;
  
 
-
-
-
-
-
-
-
-
-
-
-/*encode : function(offset, string) {
-    string = document.getElementById("input").value.toUpperCase();
-    offset = (letterPosition + 3) % 26;
-
-    for (let i = 0; i < string.length; i++){
-      const letterPosition = string.charCodeAt(i)-65;
-      return letterPosition + offset + 65;
-    }
-    document.getElementById("output").innerHTML = encode(offset, string);
-  },*/
+//((codigoDaLetra - 97 + desloc) % 26) + 97
+//Alfabeto minúsculo código: 97 a 122;
