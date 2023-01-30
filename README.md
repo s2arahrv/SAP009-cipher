@@ -43,31 +43,31 @@ a cifra de Vigenère, e tem aplicação no sistema ROT13.
 
 ## 2. Sobre o produto
 
-    Querido Diário Secreto é um site criado com a intenção de permitir a pessoas que fazem uso de diários codificarem mensagens, sentimentos e pensamentos que pretendem escrever neles, oferecendo maior privacidade e segurança a aqueles que tem receio de que seus segredos mais íntimos sejam lidos sem o seu consentimento. 
+Querido Diário Secreto é um site criado com a intenção de permitir a pessoas que fazem uso de diários codificarem mensagens, sentimentos e pensamentos que pretendem escrever neles, oferecendo maior privacidade e segurança a aqueles que tem receio de que seus segredos mais íntimos sejam lidos sem o seu consentimento. 
 
 ## 3. Utilização do produto
 
-    A interface do site é simples e intuitiva, tendo já o formato de um diário (nesse caso digital). Para codificar a sua mensagem, o usuário precisa escrevê-la na parte esquerda do diário, escolher um número offset - que é o número que as letras do texto deslocarão no alfabeto - e clicar no botão "codificar". Para descodificar a mensagem, é preciso copiá-la, clicar no botão "codifique novamente", e repetir o processo na parte direita do diário digital.
+A interface do site é simples e intuitiva, tendo já o formato de um diário (nesse caso digital). Para codificar a sua mensagem, o usuário precisa escrevê-la na parte esquerda do diário, escolher um número offset - que é o número que as letras do texto deslocarão no alfabeto - e clicar no botão "codificar". Para descodificar a mensagem, é preciso copiá-la, clicar no botão "codifique novamente", e repetir o processo na parte direita do diário digital.
 
 ## 4. Desenvolvimento do produto 
 
 ## 4.1 Protótipo 
 
-    Após decidir qual seria o propósito do produto, desenvolvi no papel um protótipo de sua interface, tendo em mente o tema e seus objetivos principais: Codificar e descodificar uma mensagem.
+Após decidir qual seria o propósito do produto, desenvolvi no papel um protótipo de sua interface, tendo em mente o tema e seus objetivos principais: Codificar e descodificar uma mensagem.
 
-    ![Protótipo](./prototipos/prototipo-cipher.jpeg)
+![Protótipo](./prototipos/prototipo-cipher.jpeg)
 
 ## 4.2 Produto inicial
 
-    Depois de analisar o protótipo no papel, resolvi ir com a ideia do título em cima e deixar a interface mínima, porém intuitiva e fácil de usar, utilizando placeholders para indicar ao usuário como navegar pelo site.
+Depois de analisar o protótipo no papel, resolvi ir com a ideia do título em cima e deixar a interface mínima, porém intuitiva e fácil de usar, utilizando placeholders para indicar ao usuário como navegar pelo site.
 
-    ![Imagem do produto inicial](./prototipos/cipher-inicial.png)
+![Imagem do produto inicial](./prototipos/cipher-inicial.png)
 
 ## 4.3 Produto final
 
-    Ao longo do desenvolvimento do site, fiz ajustes que facilitariam a interação do usuário, como: adicionar um botão de recarregar a página para que o mesmo não precisasse o fazê-lo manualmente pelo navegador; mover o botão de descodificar, dando a ele um input offset próprio; e adicionar um tooltip hover aos offsets com mais informação sobre o seu funcionamento. Em conjunto, adicionei o suporte à letras minúsculas.
+Ao longo do desenvolvimento do site, fiz ajustes que facilitariam a interação do usuário, como: adicionar um botão de recarregar a página para que o mesmo não precisasse o fazê-lo manualmente pelo navegador; mover o botão de descodificar, dando a ele um input offset próprio; e adicionar um tooltip hover aos offsets com mais informação sobre o seu funcionamento. Em conjunto, adicionei o suporte à letras minúsculas.
 
-    ![Imagem do produto final](./prototipos/produto-final.png)
+![Imagem do produto final](./prototipos/produto-final.png)
 
 ## 6. Considerações técnicas
 
