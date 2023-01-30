@@ -12,7 +12,7 @@ p {
     text-align: center;
 }
 
-#main {
+.main {
     position: relative;
 
 }
@@ -71,32 +71,27 @@ textarea {
 
 #encodeBt {
     margin-top: 3px;
-    margin-left: 115px;
+    margin-left: 113px;
 }
 
 #decodeBt {
     position: relative;
-    left: 40px;
+    left: 66px;
     margin-top: 3px;
 }
 
 #refreshBt {
     margin-top: 10px;
-    margin-left: 590px;
-}
-
-#copyBt {
-    margin-left: 50px;
-
+    margin-left: 580px;
 }
 
 .offsetNum {
     width: 34px;
+    margin-top: 3px;
 }
 
 #decodeOffset {
-    margin-left: 40px;
-    margin-top: 3px;
+    margin-left: 65px;
 }
 
 button {
@@ -107,4 +102,33 @@ button {
     font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
     font-size: medium;
+}
+
+.footer {
+    position:fixed;
+    width: 100%;
+    height: auto;
+    bottom: -5px;
+}
+
+.tooltip {
+    display: inline-block;    
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    position: absolute;
+    width: 170px;
+    background-color: aliceblue;
+    border: 1px solid gray;
+    margin-left: 4px;
+    margin-top: -55px;
+    text-align: center;
+    border-radius: 8px;
+    padding: 2px;
+    z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
 }

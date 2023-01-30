@@ -23,7 +23,7 @@ function decodeMessage() {
   const offset = Number(document.getElementById("decodeOffset").value);
   const string = document.getElementById("output").value;
   const decodeResult = cipher.decode(offset, string);
-  const showDecodeResult = document.getElementById("input");
+  const showDecodeResult = document.querySelector('#input');
 
   return showDecodeResult.innerHTML = decodeResult;
 }
@@ -35,11 +35,3 @@ const refreshButton = document.querySelector("#refreshBt"); {
   }
   refreshButton.addEventListener('click', refreshPage);
 }
-/*Função para copiar o código
-function copy() {
-const copyText = document.getElementById("output").innerHTML;
-    copyText.select();
-    navigator.clipboard.writeText(copyText.value);
-    alert("Copiado!");
-};*/
-//console.log(encodeResult);

@@ -1,12 +1,14 @@
-# Cifra de César
+# Querido Diário Secreto (Cifra de César / Projeto Cipher)
 
 ## Índice
 
 * [1. Prefácio](#1-prefácio)
-* [2. Resumo do projeto](#2-resumo-do-projeto)
-* [3. Considerações gerais](#3-considerações-gerais)
-* [4. Marco: Critérios de Aceitação Mínimos do Projeto](#5-marco-critérios-de-aceitação-mínimos-do-projeto)
-* [5. Marco Opcional: Adicione suporte para letras minúsculas e outros caracteres](#5-marco-opcional-adicione-suporte-para-letras-minúsculas-e-outros-caracteres)
+* [2. Sobre o produto](#2-sobre-o-produto)
+* [3. Utilização do produto](#3-utilização-do-produto)
+* [4. Desenvolvimento do produto](#4-desenvolvimento-do-produto)
+* [4.1 Protótipo](#4.1-protótipo)
+* [4.2 Produto inicial](#4.2-produto-inicial)
+* [4.3 Produto final](#4.3-produto-final)
 * [6. Considerações técnicas](#6-considerações-técnicas)
 * [7. Objetivos de aprendizagem](#7-objetivos-de-aprendizagem)
 * [8. Guias, dicas e leituras complementares](#8-guias-dicas-e-leituras-complementares)
@@ -39,102 +41,33 @@ mas a cifra de César muitas vezes pode fazer parte de um sistema
 mais complexo de criptografia, como
 a cifra de Vigenère, e tem aplicação no sistema ROT13.
 
-## 2. Resumo do projeto
+## 2. Sobre o produto
 
-Neste projeto você criará a primeira aplicação web do _bootcamp_. Nela o usuário
-poderá cifrar e decifrar um texto no navegador indicando um deslocamento
-específico de caracteres (_offset_). Você fará isso usando HTML, CSS e
-JavaScript.
+    Querido Diário Secreto é um site criado com a intenção de permitir a pessoas que fazem uso de diários codificarem mensagens, sentimentos e pensamentos que pretendem escrever neles, oferecendo maior privacidade e segurança a aqueles que tem receio de que seus segredos mais íntimos sejam lidos sem o seu consentimento. 
 
-O tema é livre. Você deve pensar em alguma situação de vida real em que seja
-necessário cifrar uma mensagem e pensar em como deve ser a experiência do
-usuário (tela, explicações, mensagens, cores, marca?, etc.). Algumas ideias de
-exemplo:
+## 3. Utilização do produto
 
-* Criar senhas seguras para email.
-* Cifrar cartões de crédito.
-* Ferramenta de mensagens internas de uma organização
-  em uma zona de conflito.
-* Mensagens secretas para alguma pessoa.
+    A interface do site é simples e intuitiva, tendo já o formato de um diário (nesse caso digital). Para codificar a sua mensagem, o usuário precisa escrevê-la na parte esquerda do diário, escolher um número offset - que é o número que as letras do texto deslocarão no alfabeto - e clicar no botão "codificar". Para descodificar a mensagem, é preciso copiá-la, clicar no botão "codifique novamente", e repetir o processo na parte direita do diário digital.
 
-Como continuação do projeto de pré-admissão, você retrabalhará os fundamentos
-do JavaScript, incluindo conceitos como variáveis, condicionais e funções,
-bem como eventos e manipulação básica de DOM, fundamentos HTML e CSS.
- desenvolver este projeto, você também se familiarizará com novos conceitos.
+## 4. Desenvolvimento do produto 
 
-### Os objetivos gerais deste projeto são os seguintes
+## 4.1 Protótipo 
 
-* Trabalhar com base em um boilerplate, a estrutura básica de um projeto em diferentes
-  pastas (através de módulos em JS).
-* Conhecer as ferramentas de manutenção e melhoria do código (linters e testes
-  unitários).
-* Aprenda sobre objetos, estruturas, métodos e iteração (loops) em JavaScript
-* Implementar controle de versão com git (e a plataforma github)
+    Após decidir qual seria o propósito do produto, desenvolvi no papel um protótipo de sua interface, tendo em mente o tema e seus objetivos principais: Codificar e descodificar uma mensagem.
 
-## 3. Considerações gerais
+    ![Protótipo](./prototipos/prototipo-cipher.jpeg)
 
-* Resolvemos este projeto individualmente. Recomendamos uma duração de 1-3 sprints.
-* Concentre-se em aprender e não apenas "concluir" o projeto.
-* Sugerimos que você não tente saber tudo antes de começar a codificar.
-  Não se preocupe muito agora com o que você _ainda_ não entende.
-  Você vai aprender.
+## 4.2 Produto inicial
 
-## 4. Marco: Critérios de Aceitação Mínimos do Projeto
+    Depois de analisar o protótipo no papel, resolvi ir com a ideia do título em cima e deixar a interface mínima, porém intuitiva e fácil de usar, utilizando placeholders para indicar ao usuário como navegar pelo site.
 
-Esses são os requisitos que seu projeto deve atender para garantir que
-seu trabalho atenda aos objetivos principais.
+    ![Imagem do produto inicial](./prototipos/cipher-inicial.png)
 
-**1. Uma interface que deve permitir ao usuário:**
+## 4.3 Produto final
 
-* **Criptografar uma mensagem**
-  - Inserir a mensagem (texto) que deseja criptografar. A mensagem usa um
-    alfabeto simplificado (apenas letras maiúsculas).
-  - Escolher um número de deslocamento (_offset_) indicando quantas posições
-    você deseja que a cifra desloque cada caractere do alfabeto. O número
-    será positivo e inteiro (inteiro positivo).
-  - Veja o resultado da mensagem criptografada.
+    Ao longo do desenvolvimento do site, fiz ajustes que facilitariam a interação do usuário, como: adicionar um botão de recarregar a página para que o mesmo não precisasse o fazê-lo manualmente pelo navegador; mover o botão de descodificar, dando a ele um input offset próprio; e adicionar um tooltip hover aos offsets com mais informação sobre o seu funcionamento. Em conjunto, adicionei o suporte à letras minúsculas.
 
-* **Descriptografar uma mensagem**
-  - Inserir a mensagem (texto) que deseja descriptografar. A mensagem usa um
-    alfabeto simplificado (apenas letras maiúsculas).
-  - Escolher um número de deslocamento (_offset_, que corresponde ao que usamos
-    para criptografar) indicando quantas posições você deseja que a cifra
-    desloque cada caractere do alfabeto. O número será positivo e inteiro
-    (inteiro positivo).
-  - Veja o resultado da mensagem descriptografada.
-
-**2. Testes unitários dos métodos.**
-Os métodos `cipher` (`encode` e `decode`) devem ser cobertos por testes
-unitários.
-
-**3. Código do seu projeto enviado para seu repositório e interface "implantada".**
-O código final deve estar um repositório no GitHub. A interface, ou página da
-web, deve ser "implantada" usando o GitHub Pages.
-
-**4. Um README contendo uma definição de produto.**
-No README, conte-nos como você pensou sobre os usuários e qual foi o seu
-processo para definir o produto final em nível de experiência e interface.
-Estas perguntas servem de guia:
-
-* Quem são os principais usuários do produto
-* Quais são os objetivos desses usuários em relação ao seu produto
-* Como você acha que o produto que você está criando está resolvendo seus
-  problemas
-
-Com esses requisitos atendidos, você pode agendar um feedback do projeto com
-um coach.
-
-## 5. Marco Opcional: Adicione suporte para letras minúsculas e outros caracteres
-
-As partes opcionais permitem que você se aprofunde um pouco mais
-nos objetivos de aprendizagem do projeto. Tudo na vida tem prós e contras,
-decida sabiamente se você quiser gastar o tempo aprofundando/refinando ou
-aprendendo coisas novas no próximo projeto.
-
-O marco de critérios mínimos não menciona o que aconteceria com letras
-minúsculas e outros caracteres (como espaços, pontuação, ...). O _boilerplate_
-inclui alguns _tests_ (comentados no início) que você pode usar como ponto
-de partida para implementar o suporte para esses casos adicionais.
+    ![Imagem do produto final](./prototipos/produto-final.png)
 
 ## 6. Considerações técnicas
 

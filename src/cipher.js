@@ -11,7 +11,7 @@ const cipher = {
     // Loop por todas as letras da mensagem, encontrando o código de cada uma
     for (let i = 0; i < string.length; i++){
       const cipherCode = string.charCodeAt(i);
-      //const cipherCode = cipherUppercase.charCodeAt(i);
+      // const cipherCode = cipherUppercase.charCodeAt(i);
       /* Executar ((codigoDaLetra - cod1aLetra + desloc) % tamDoAlfabeto) + cod1aLetra, 
 retornar String dos códigos unicode e adicioná-la ao output final */      
       if (cipherCode >= 65 && cipherCode <= 90) {
