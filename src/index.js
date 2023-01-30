@@ -9,9 +9,8 @@ function encodeMessage()  {
   const offset = Number(document.getElementById("encodeOffset").value);
   const string = document.getElementById("input").value;
   const encodeResult = cipher.encode(offset, string);
-  const showResult = document.getElementById("output");
 
-  return showResult.innerHTML = encodeResult;
+  return document.querySelector("#output").value = encodeResult;
 }
 // Função decode:
 // Chamar botão do HTML
@@ -23,9 +22,8 @@ function decodeMessage() {
   const offset = Number(document.getElementById("decodeOffset").value);
   const string = document.getElementById("output").value;
   const decodeResult = cipher.decode(offset, string);
-  const showDecodeResult = document.querySelector('#input');
 
-  return showDecodeResult.innerHTML = decodeResult;
+  return document.querySelector("#input").value = decodeResult;
 }
 
 // Função para recarregar a página
