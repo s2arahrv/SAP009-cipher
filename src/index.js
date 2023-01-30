@@ -33,3 +33,15 @@ const refreshButton = document.querySelector("#refreshBt"); {
   }
   refreshButton.addEventListener('click', refreshPage);
 }
+
+//Função para copiar o texto
+const copyBt = document.querySelector("#copyBt"); 
+copyBt.addEventListener('click', function(){
+  copiedText();
+})
+
+function copiedText() {
+  event.preventDefault();
+  const codeText = document.querySelector("#output").value; {
+    navigator.clipboard.writeText(codeText);
+  }}
