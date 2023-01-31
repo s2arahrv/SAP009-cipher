@@ -1,0 +1,147 @@
+
+body {
+    background-color: 	#fbf6c6;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#title {
+    text-align: center;
+}
+
+p {
+    text-align: center;
+}
+
+.main {
+    position: relative;
+
+}
+.diary {
+    box-sizing: border-box;
+    max-width: 900px;
+    min-width: 700px;
+    max-height: 600px;
+    min-height: 500px;
+    margin: 0 auto;
+    padding-top: 50px;
+    background-color: white;
+    box-shadow: inset 8px 0px 10px lightgray, inset -8px -10px 10px lightgray;
+    border-left: 10px solid #774e41;
+    border-right: 10px solid #774e41;
+    border-bottom: 11px solid #774e41;
+    border-top: 6px solid #664237;
+    border-radius: 3px;
+}
+
+#left {
+    position: absolute;
+    left: 280px;
+    width: 45%;
+    padding-top: 0px;
+
+}
+
+#input {
+    margin-top: -10px;
+    height: 400px;
+    width: 350px;
+}
+
+#right {
+    position: absolute;
+    vertical-align: middle;
+    right: 20px;
+    width: 45%;
+    top: 53px;
+    height: 483px;
+    border-left: solid black;
+    border-width: 1px;
+    padding-left: 40px;
+}
+
+#output {
+    margin-top: 40px;
+    height: 400px;
+    width: 350px;
+}
+
+textarea {
+    display: block;
+    font-size: 15px;
+    padding: 5px;
+    border: none;
+    outline: none;
+}
+
+#encodeBt {
+    margin-left: 100px;
+}
+
+#decodeBt {
+    position: relative;
+    left: 84px;
+}
+
+#refreshBt {
+    margin-top: 10px;
+    margin-left: 355px;
+}
+
+#copyBt {
+    margin-left: 240px;
+}
+
+.offsetNum {
+    width: 34px;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+
+#decodeOffset {
+    margin-left: 84px;
+}
+
+button {
+    background-color: rgb(248, 223, 202);
+    color: black;
+    border: 1px outset #a57f70;
+    border-radius: 8px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: medium;
+    font-weight: 700;
+}
+
+button:active {
+    border: 2px outset #a57f70;
+}
+
+.footer {
+    position:fixed;
+    width: 100%;
+    height: auto;
+    bottom: -5px;
+}
+
+.tooltip {
+    display: inline-block;    
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    position: absolute;
+    width: 170px;
+    font-weight: bold;
+    background-color: rgb(219, 236, 250);
+    border: 1px solid #a57f70;
+    margin-left: 4px;
+    margin-top: -55px;
+    text-align: center;
+    font-weight: 500;
+    border-radius: 8px;
+    padding: 2px;
+    z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
