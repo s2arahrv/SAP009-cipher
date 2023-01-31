@@ -70,7 +70,7 @@ Ao longo do desenvolvimento do site, fiz ajustes que facilitariam a interação 
 
 ![Imagem do produto em desenvolvimento](./prototipos/produto-em-desenvolvimento.png)
 
-## 5 Produto final
+## 5. Produto final
 
 Na fase final do desenvolvimento do produto, foram feitas algumas mudanças ao design da página em si, e adicionado um botão para copiar o texto codificado. 
 
