@@ -48,7 +48,7 @@ Querido Diário Secreto é um site criado com a intenção de permitir a pessoas
 
 ## 3. Utilização do produto
 
-A interface do site é simples e intuitiva, tendo já o formato de um diário (nesse caso digital). Para codificar a sua mensagem, o usuário precisa escrevê-la na parte esquerda do diário, escolher um número offset - que é o número que as letras do texto deslocarão no alfabeto - e clicar no botão "codificar". Para descodificar a mensagem, é preciso copiá-la, clicar no botão "codifique novamente", e repetir o processo na parte direita do diário digital.
+O site pode ser acessado pelo Github Pages [(link)](https://s2arahrv.github.io/SAP009-cipher/). A interface do site é simples e intuitiva, tendo já o formato de um diário (nesse caso digital). Para codificar a sua mensagem, o usuário precisa escrevê-la na parte esquerda do diário, escolher um número offset - que é o número que as letras do texto deslocarão no alfabeto - e clicar no botão "codificar". Para descodificar a mensagem, é preciso copiá-la, clicar no botão "codifique novamente", e repetir o processo na parte direita do diário digital.
 
 ## 4. Desenvolvimento do produto 
 
