@@ -6,10 +6,10 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="main">
+    <main>
       <h2 id="title">Querido Diário Secreto</h2>
-      <div class="diary">
-        <div id="left">
+      <section class="diary">
+        <article id="left">
           <form id="form-cipher">
             <textarea input="inputText" id="input" style="resize:none" placeholder ="Escreva aqui os seus segredos..."></textarea>
           </form>
@@ -18,22 +18,24 @@
         <input type="number" class="offsetNum" id="encodeOffset" max="30" min="1">
         <span class="tooltiptext">Escolha um número para deslocar as letras do alfabeto!</span>
         </div>
-        </div>
-        <div id="right">
+        </article>
+        <article id="right">
         <textarea output="outputText" id="output" style="resize:none" placeholder="e torne-os mais secretos ainda!"></textarea>
         <button id="decodeBt">Descodificar</button>
         <div class="tooltip">
         <input type="number" class="offsetNum" id="decodeOffset" max="30" min="1">
         <span class="tooltiptext">Escolha um número para deslocar as letras do alfabeto!</span>
         </div>
-      </div>
-      </div>
+        </article>
+      </section>
+    <section class="buttons">
         <button type="submit" id="refreshBt">Codifique novamente</button>
         <button type="submit" id="copyBt" (click)="copyText()">Copie o seu código</button>
-    </div>
-    <div class="footer">
+    </section>
+    </main>
+    <footer>
       <p>Desenvolvido por Sarah Rodrigues Vieira, 2023</p>
-    </div>
+    </footer>
     <script src="index.js" type="module"></script>
   </body>
 </html>
