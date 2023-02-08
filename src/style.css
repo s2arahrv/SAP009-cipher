@@ -12,7 +12,7 @@ p {
     text-align: center;
 }
 
-main {
+.main {
     position: relative;
 
 }
@@ -52,7 +52,7 @@ main {
     vertical-align: middle;
     right: 20px;
     width: 45%;
-    top: 53px;
+    top: 73px;
     height: 483px;
     border-left: solid black;
     border-width: 1px;
@@ -115,7 +115,7 @@ button:active {
     border: 2px outset #a57f70;
 }
 
-footer {
+.footer {
     position:fixed;
     width: 100%;
     height: auto;
